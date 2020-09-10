@@ -4,10 +4,9 @@
 
 ### Why do I need?
 
-
-1. **Web Browser** I imagine you already have one if you are reading this.  
-2. **AWS Account** If you don't already have an account or you have not been handed one as part of a workshop, please visit the following link! 
-3. **Text editor** Don't worry if you are not a Coding Guru, I promise setting the demo up will be very easy!
+* **Web Browser** I imagine you already have one if you are reading this.  
+* **AWS Account** If you don't already have an account or you have not been handed one as part of a workshop, please visit the following link! 
+* **Text editor** Don't worry if you are not a Coding Guru, I promise setting the demo up will be very easy!
 
 
 ### What am I going to build?
@@ -23,10 +22,10 @@ If you choose to deploy this semi-automated infrastructure, Amazon API Gateway a
 ![Semi-Automated](src/images/semi-automated.png)
 
 * **Step 1:** Deploy the AWS Infrastructure:
-  * Launch() the following AWS CloudFormation Template in your account (The link will automatically open the AWS CloudFormation console).
+  * Launch() the following **AWS CloudFormation Template** in your account (The link will automatically open the AWS CloudFormation console).
   * All parameters are already configured so just check the I acknowledge that AWS CloudFormation might create IAM resources box and click Create stack.
-  * Wait until the stack goes into the CREATE_COMPLETE status, then go to the Outputs tab.
-  * You will see an output named ApiEndpoint. Take note of the url, as you will use it later. 
+  * Wait until the stack goes into the **CREATE_COMPLETE** status, then go to the **Outputs tab**.
+  * You will see an output named **ApiEndpoint**. Take note of the url, as you will use it later. 
 
 * **Step 2:** Download the necessary static files to run the webapp and configure the API call.
     * Download the following .zip file and decompress it! 
@@ -43,10 +42,10 @@ If you choose to deploy the fully-automated infrastructure, in addition to the s
 ![Semi-Automated](src/images/fully-automated.png)
 
 * **Step 1:** Deploy the AWS Infrastructure:
-  * Launch() the following AWS CloudFormation Template in your account (The link will automatically open the AWS CloudFormation console).
+  * Launch() the following **AWS CloudFormation Template** in your account (The link will automatically open the AWS CloudFormation console).
   * All parameters are already configured so just check the I acknowledge that AWS CloudFormation might create IAM resources box and click Create stack.
-  * Wait until the stack goes into the CREATE_COMPLETE status, then go to the Outputs tab.
-  * You will see an output named CloudFront Endpoint.
+  * Wait until the stack goes into the **CREATE_COMPLETE status**, then go to the **Outputs tab**.
+  * You will see an output named **CloudFront Endpoint** which you will use to access the webapp.
 
 * **Step 2:** You are now ready to open the Amazon CloudFront Endpoint and start testing some of the different SSML tags available in Amazon Polly.
 
