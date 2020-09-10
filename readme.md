@@ -69,7 +69,7 @@ Amazon API Gateway is a fully managed service that makes it easy for developers 
 
 **AWS Lambda**
 
-With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code and Lambda takes care of everything required to run and scale your code with high availability. 
+With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code and the service takes care of everything required to run and scale your code with high availability. 
 
 The Lambda function deployed will be triggered by API Gateway when a request is made from the webapp. The function is written in python and is quite simple: 
  1. Retrieve all the information from the event.
