@@ -33,12 +33,30 @@ If you choose to deploy the fully-automated infrastructure, in addition to the s
 Alright! Now you that you are aware of the services you are going to deploy to make this demo work, let's see what you need to do:
 
 #### 1. I want to run the webapp locally on my computer!
-- **Step 1:** Download() the necessary static files to run the webapp.
-- **Step 2:** Launch() the following AWS CloudFormation Template in your account (The link will automatically open the AWS CloudFormation console).  
-- **Step 3:** All parameters are already configured so just check the I acknowledge that AWS CloudFormation might create IAM resources box and click Create stack.
-- **Step 4:** Wait until the stack goes into the CREATE_COMPLETE status, then go to the Outputs tab.
-- **Step 5:** You will see an outputs named ApiEndpoint. Take note of the url, as you will use it later. 
+* **Step 1:** Deploy the AWS Infrastructure:
+  * Launch() the following AWS CloudFormation Template in your account (The link will automatically open the AWS CloudFormation console).
+  * All parameters are already configured so just check the I acknowledge that AWS CloudFormation might create IAM resources box and click Create stack.
+  * Wait until the stack goes into the CREATE_COMPLETE status, then go to the Outputs tab.
+  * You will see an output named ApiEndpoint. Take note of the url, as you will use it later. 
+
+* **Step 2:** Download the necessary static files to run the webapp and configure the API call.
+    * Download the following .zip file and decompress it! 
+    * Open the **script.js** located in the **js** folder and insert the API url from the previous step in the first line, where you will see the follwing code:
+    
+    ``HERE COMES THE CODE`` 
+    
+* **Step 3:** You are now ready to open the index.html file and start testing some of the different SSML tags available in Amazon Polly.  
 
 
-#### 2. I want to run the webapp locally on my computer!
+#### 2. I want Amazon Cloudfront and S3 to deliver the webapp!
+* **Step 1:** Deploy the AWS Infrastructure:
+  * Launch() the following AWS CloudFormation Template in your account (The link will automatically open the AWS CloudFormation console).
+  * All parameters are already configured so just check the I acknowledge that AWS CloudFormation might create IAM resources box and click Create stack.
+  * Wait until the stack goes into the CREATE_COMPLETE status, then go to the Outputs tab.
+  * You will see an output named CloudFront Endpoint.
+
+* **Step 2:** You are now ready to open the Amazon CloudFront Endpoint and start testing some of the different SSML tags available in Amazon Polly.  
+
+
 ### This looks really cool, but what is going on underneath?
+
