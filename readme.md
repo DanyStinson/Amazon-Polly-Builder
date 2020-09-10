@@ -56,16 +56,22 @@ Here is a brief explanation of the underlying infrastructure:
 
 **Amazon Cloudfront + Amazon S3** 
 
+If you don't want to run the webapp on your laptop you can serve the webapp from Amazon Cloudfront and Amazon S3. 
+
+Amazon S3 is object storage built to store and retrieve any amount of data from anywhere on the Internet. It’s a simple storage service that offers an extremely durable, highly available, and infinitely scalable data storage infrastructure at very low costs.
+
+Amazon CloudFront is a web service that gives businesses and web application developers an easy and cost effective way to distribute content with low latency and high data transfer speeds. You can set up a CloudFront distribution to serve your content while keeping your Amazon S3 bucket private and secure. 
+
 
 **Amazon API Gateway**
 
-Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. 
+Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. The deployed API will act as a bridge between your frontend and backend, receiving the appropriate request an triggering the correspondent Lambda function which will receive the parameters take care of calling Amazon Polly.  
 
 **AWS Lambda**
 
 With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code and Lambda takes care of everything required to run and scale your code with high availability. 
 
-The lambda function deployed will be triggered by API Gateway when a request is made from the webapp. The function is written in python and is quite simple: 
+The Lambda function deployed will be triggered by API Gateway when a request is made from the webapp. The function is written in python and is quite simple: 
  1. Retrieve all the information from the event.
  2. Build the Amazon Polly pre-signed URL call.
  3. Call Amazon Polly and retrieve the pre-signed URL.
