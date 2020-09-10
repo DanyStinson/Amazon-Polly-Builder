@@ -1,6 +1,6 @@
 ![Banner](src/images/banner.png)
 ### Why am I here?
-Welcome to the Amazon Polly Builder Demo. As you may or may not know, you can use Amazon Polly to generate speech from either plain text or from documents marked up with Speech Synthesis Markup Language (SSML). The objective of this demo is for you to try out the different SSML tags available in a user friendly way and easily enable you to create enriched speech fragments.
+<div style="text-align: justify"> Welcome to the Amazon Polly Builder Demo. As you may or may not know, you can use Amazon Polly to generate speech from either plain text or from documents marked up with Speech Synthesis Markup Language (SSML). The objective of this demo is for you to try out the different SSML tags available in a user friendly way and easily enable you to create enriched speech fragments.</div>
 
 ### Why do I need?
 
@@ -16,23 +16,12 @@ As mentioned before, the objective is for you to test the different SSML tags yo
 
 Let's have a look at the two infrastructures you are going to be able to deploy. 
 
-#### 1. Semi-automated deployment
+#### 1. I want to run the webapp locally on my computer!
 
-If you choose to deploy the semi-automated infrastructure, Amazon API Gateway and AWS Lambda (with the appropiate role to call Amazon Polly) will be deployed and configured. You will also have to open the static assets locally on your computer and make a small change in the code which I will specify you later.
+If you choose to deploy this semi-automated infrastructure, Amazon API Gateway and AWS Lambda (with the appropriate role to call Amazon Polly) will be deployed and configured. You will also have to open the static assets locally on your computer and make a small change in the code which I will specify you later.
 
 ![Semi-Automated](src/images/semi-automated.png)
 
-#### 2. Fully automated deployment  
-
-If you choose to deploy the fully-automated infrastructure, in addition to the services mentioned in the previous point, an Amazon Cloudfront Distribution will also be deployed to securely access the statics assets that will be stored in an Amazon S3 bucket. 
-
-![Semi-Automated](src/images/fully-automated.png )
-
-### Where do I start?
-
-Alright! Now you that you are aware of the services you are going to deploy to make this demo work, let's see what you need to do:
-
-#### 1. I want to run the webapp locally on my computer!
 * **Step 1:** Deploy the AWS Infrastructure:
   * Launch() the following AWS CloudFormation Template in your account (The link will automatically open the AWS CloudFormation console).
   * All parameters are already configured so just check the I acknowledge that AWS CloudFormation might create IAM resources box and click Create stack.
@@ -45,18 +34,23 @@ Alright! Now you that you are aware of the services you are going to deploy to m
     
     ``HERE COMES THE CODE`` 
     
-* **Step 3:** You are now ready to open the index.html file and start testing some of the different SSML tags available in Amazon Polly.  
-
+* **Step 3:** You are now ready to open the index.html file and start testing some of the different SSML tags available in Amazon Polly.
 
 #### 2. I want Amazon Cloudfront and S3 to deliver the webapp!
+
+If you choose to deploy the fully-automated infrastructure, in addition to the services mentioned in the previous point, an Amazon Cloudfront Distribution will also be deployed to securely access the statics assets that will be stored in an Amazon S3 bucket. 
+
+![Semi-Automated](src/images/fully-automated.png)
+
 * **Step 1:** Deploy the AWS Infrastructure:
   * Launch() the following AWS CloudFormation Template in your account (The link will automatically open the AWS CloudFormation console).
   * All parameters are already configured so just check the I acknowledge that AWS CloudFormation might create IAM resources box and click Create stack.
   * Wait until the stack goes into the CREATE_COMPLETE status, then go to the Outputs tab.
   * You will see an output named CloudFront Endpoint.
 
-* **Step 2:** You are now ready to open the Amazon CloudFront Endpoint and start testing some of the different SSML tags available in Amazon Polly.  
+* **Step 2:** You are now ready to open the Amazon CloudFront Endpoint and start testing some of the different SSML tags available in Amazon Polly.
+
+
 
 
 ### This looks really cool, but what is going on underneath?
-
