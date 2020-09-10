@@ -50,6 +50,31 @@ If you choose to deploy the fully-automated infrastructure, in addition to the s
 * **Step 2:** You are now ready to open the Amazon CloudFront Endpoint and start testing some of the different SSML tags available in Amazon Polly.
 
 
-
-
 ### This looks really cool, but what is going on underneath?
+
+Here is a brief explanation of the underlying infrastructure:
+
+**Amazon Cloudfront + Amazon S3** 
+
+
+**Amazon API Gateway**
+
+Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. 
+
+**AWS Lambda**
+
+With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code and Lambda takes care of everything required to run and scale your code with high availability. 
+
+The lambda function deployed will be triggered by API Gateway when a request is made from the webapp. The function is written in python and is quite simple: 
+ 1. Retrieve all the information from the event.
+ 2. Build the Amazon Polly pre-signed URL call.
+ 3. Call Amazon Polly and retrieve the pre-signed URL.
+ 4. Return the url with the generated speech back to the client.
+
+**Amazon Polly**
+
+Here is the most important service of the demo, and guess what, you don't need to set anything up to use it! This service is part of our AWS AI	Services which are purely API driven, so developers with no ML experience can leverage services already trained by AWS.
+
+As you can see in the following example, you can call Amazon Polly via API with the necessary fields and it will return you the generated audio.   
+
+
