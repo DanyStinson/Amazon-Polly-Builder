@@ -52,7 +52,7 @@ If you choose to deploy the fully-automated infrastructure, in addition to the s
 
 ### This looks really cool, but what is going on underneath?
 
-Here is a brief explanation of the underlying infrastructure:
+Here is a brief explanation of the underlying services:
 
 **Amazon Cloudfront + Amazon S3** 
 
