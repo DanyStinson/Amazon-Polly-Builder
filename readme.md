@@ -33,7 +33,8 @@ If you choose to deploy this semi-automated infrastructure, Amazon API Gateway a
     
     ``const apiEndpoint='REPLACE-THIS-WITH-THE-API-ENDPOINT';`` 
     
-* **Step 3:** You are now ready to open the index.html file and start testing some of the different SSML tags available in Amazon Polly.
+* **Step 3:** You are now ready to run index.html on your local server and start testing some of the different SSML tags available in Amazon Polly.
+  * How do I create a local server? -> Navigate to the assets folder with ``cd PathToYourAssetsFolder``and run the following command ``python -m SimpleHTTPServer``. Next, just head to your browser and type in ``localhost:8000``and you should see the Amazon Polly Builder.
 
 #### 2. I want Amazon Cloudfront and S3 to deliver the webapp!
 
