@@ -31,7 +31,7 @@ If you choose to deploy this semi-automated infrastructure, Amazon API Gateway a
     * [Download](https://amazon-polly-demo.s3-eu-west-1.amazonaws.com/Amazon-Polly-Builder-Demo-Assets.zip) the following .zip file and decompress it! 
     * Open the **api-gateway-endpoint.js** located in the **js** folder and insert the API url from the previous step in the first line, where you will see the follwing code:
     
-    ``const apiEndpoint='REPLACE-THIS-WITH-THE-API-ENDPOINT';`` 
+      ``const apiEndpoint='REPLACE-THIS-WITH-THE-API-ENDPOINT';`` 
     
 * **Step 3:** You are now ready to run index.html on your local server and start testing some of the different SSML tags available in Amazon Polly.
   * How do I create a local server? -> Navigate to the assets folder with ``cd PathToYourAssetsFolder``and run the following command ``python -m SimpleHTTPServer``. Next, just head to your browser and type in ``localhost:8000``and you should see the Amazon Polly Builder.
