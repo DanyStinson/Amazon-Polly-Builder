@@ -50,6 +50,11 @@ If you choose to deploy the fully-automated infrastructure, in addition to the s
 
 * **Step 2:** You are now ready to open the Amazon CloudFront Endpoint and start testing some of the different SSML tags available in Amazon Polly.
 
+### What should I be seeing?
+
+If you followed correctly the previous steps you should be able to see the Amazon Polly Builder.
+![Amazon-Polly-Builder](src/images/main.png)
+
 
 ### This looks really cool, but what is going on underneath?
 
