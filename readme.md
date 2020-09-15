@@ -24,7 +24,7 @@ If you choose to deploy this semi-automated infrastructure, Amazon API Gateway a
 * **Step 1:** Deploy the AWS Infrastructure:
   * [Launch](https://eu-west-1.console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/create/review?templateURL=https://amazon-polly-demo.s3-eu-west-1.amazonaws.com/amazon-polly-builder-local.yaml&stackName=Amazon-Polly-Builder) the following **AWS CloudFormation Template** in your account (The link will automatically open the AWS CloudFormation console).
   >__Note:__ If you are already running this CloudFormation Stack with the predefined Stack Name, please change the name of the new stack.
-  * All parameters are already configured so just check the I acknowledge that AWS CloudFormation might create IAM resources box and click Create stack.
+  * All parameters are already configured so just select your Stack Name, check the AWS CloudFormation acknowledgements and click Create stack.
   * Wait until the stack goes into the **CREATE_COMPLETE** status, then go to the **Outputs tab**.
   * You will see an output named **ApiEndpoint**. Take note of the url, as you will use it later. 
 
@@ -45,9 +45,9 @@ If you choose to deploy the fully-automated infrastructure, in addition to the s
 
 * **Step 1:** Deploy the AWS Infrastructure:
   * [Launch](https://eu-west-1.console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/create/review?templateURL=https://amazon-polly-demo.s3-eu-west-1.amazonaws.com/amazon-polly-builder-full.yaml&stackName=Amazon-Polly-Builder) the following **AWS CloudFormation Template** in your account (The link will automatically open the AWS CloudFormation console).
-  * All parameters are already configured so just check the I acknowledge that AWS CloudFormation might create IAM resources box and click Create stack.
+  * All parameters are already configured so just check select your Stack Name, insert a **UNIQUE** S3 bucket name, check the AWS CloudFormation acknowledgements and click Create stack.
   * Wait until the stack goes into the **CREATE_COMPLETE status**, then go to the **Outputs tab**.
-  * You will see an output named **CloudFront Endpoint** which you will use to access the webapp.
+  * You will see an output named **CloudFront Endpoint** which you will use to access the demo.
 
 * **Step 2:** You are now ready to open the Amazon CloudFront Endpoint and start testing some of the different SSML tags available in Amazon Polly.
 
