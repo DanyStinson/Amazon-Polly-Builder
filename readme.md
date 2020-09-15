@@ -44,7 +44,7 @@ If you choose to deploy the fully-automated infrastructure, in addition to the s
 ![Fully-Automated](src/images/fully-automated.png)
 
 * **Step 1:** Deploy the AWS Infrastructure:
-  * Launch() the following **AWS CloudFormation Template** in your account (The link will automatically open the AWS CloudFormation console).
+  * [Launch](https://eu-west-1.console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/create/review?templateURL=https://amazon-polly-demo.s3-eu-west-1.amazonaws.com/amazon-polly-builder-full.yaml&stackName=Amazon-Polly-Builder) the following **AWS CloudFormation Template** in your account (The link will automatically open the AWS CloudFormation console).
   * All parameters are already configured so just check the I acknowledge that AWS CloudFormation might create IAM resources box and click Create stack.
   * Wait until the stack goes into the **CREATE_COMPLETE status**, then go to the **Outputs tab**.
   * You will see an output named **CloudFront Endpoint** which you will use to access the webapp.
