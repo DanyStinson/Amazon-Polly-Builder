@@ -28,7 +28,7 @@ If you choose to deploy this semi-automated infrastructure, Amazon API Gateway a
   * You will see an output named **ApiEndpoint**. Take note of the url, as you will use it later. 
 
 * **Step 2:** Download the necessary static files to run the webapp and configure the API call.
-    * [Download](https://amazon-polly-demo.s3-eu-west-1.amazonaws.com/Amazon-Polly-Builder-Demo-Assets.zip) the following .zip file and decompress it! 
+    * [Download](https://amazon-polly-demo.s3-eu-west-1.amazonaws.com/Amazon-Polly-Builder-Demo-Assets.zip) the following .zip file and decompress it!
     * Open the **api-gateway-endpoint.js** located in the **js** folder and insert the API url from the previous step in the first line, where you will see the follwing code:
     
       ``const apiEndpoint='REPLACE-THIS-WITH-THE-API-ENDPOINT';`` 
@@ -53,8 +53,8 @@ If you choose to deploy the fully-automated infrastructure, in addition to the s
 ### What should I be seeing?
 
 If you followed correctly the previous steps you should be able to see the Amazon Polly Builder.
-![Amazon-Polly-Builder](src/images/main.png)
 
+![Amazon-Polly-Builder](src/images/main.png)
 
 ### This looks really cool, but what is going on underneath?
 
